@@ -1,44 +1,89 @@
-/* GERAL */
+
 body {
-    background-color: #f8f9fa;
-    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fa;
+    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-/* HEADER */
-header h1 {
-    font-size: 2.8rem;
+.section {
+    padding: 70px 0;
 }
 
-header p {
-    font-size: 1.2rem;
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    position: relative;
 }
 
-/* HABILIDADES */
-.skill-badge {
-    font-size: 1rem;
-    padding: 10px 15px;
-    margin: 5px;
-    border-radius: 8px;
+.section-title::after {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #0d6efd;
+    display: block;
+    margin-top: 8px;
+    border-radius: 5px;
 }
 
-/* PROJETOS */
-.project-card {
+
+.header-gradient {
+    background: linear-gradient(145deg, #0d6efd, #6610f2);
+}
+
+
+.contact-box {
     background: white;
     border-radius: 12px;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1.1rem;
+}
+
+.contact-box i {
+    color: #0d6efd;
+    margin-right: 6px;
+}
+
+/* ----------- HABILIDADES ----------- */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-chip {
+    background: #0d6efd;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.2s;
+}
+
+.skill-chip:hover {
+    background: #084298;
+}
+
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    transition: 0.3s ease;
+    text-align: center;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
-/* LINKS */
-a {
-    text-decoration: none;
+.icon-box {
+    font-size: 40px;
+    color: #0d6efd;
+    margin-bottom: 15px;
 }
 
-/* FOOTER */
-footer {
-    margin-top: 40px;
+
+.footer {
+    background: #212529;
 }
